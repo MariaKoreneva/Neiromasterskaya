@@ -1,0 +1,82 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Как выделиться среди других психологов?</title><style>
+:root{--bg:#090b18;--text:#f7f3f1;--muted:#c9c5d2;--peach:#f0b39b;--violet:#c6a9f0;--green:#91cbb0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);font-family:Inter,Arial,sans-serif;background:linear-gradient(180deg,#090b18 0%,#101027 48%,#090c19 100%);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at 5% 8%,rgba(158,85,210,.14),transparent 30%),radial-gradient(ellipse at 92% 30%,rgba(230,115,173,.12),transparent 25%),radial-gradient(ellipse at 90% 88%,rgba(239,164,137,.10),transparent 28%);filter:blur(8px)}
+.wrap{position:relative;width:min(1100px,calc(100% - 36px));margin:auto;padding:46px 0 70px}
+.back{border:0;border-radius:999px;padding:17px 31px;font-size:16px;font-weight:850;color:#181321;background:linear-gradient(90deg,var(--peach),#e6a0bd,var(--violet));cursor:pointer}
+.top-back{margin:0 0 10px 3vw}.bottom{padding:70px 3vw 20px;border-top:1px solid rgba(255,255,255,.08)}
+.kicker{font-size:13px;letter-spacing:.18em;font-weight:800;color:var(--peach);text-transform:uppercase}
+.grad{background:linear-gradient(90deg,var(--peach),#e9a0b8 45%,var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero{min-height:68vh;display:flex;flex-direction:column;justify-content:center;padding:6vh 3vw}.hero h1{font-size:clamp(40px,5.5vw,68px);line-height:1.03;margin:18px 0 22px}
+.lead,.intro p{font-size:19px;line-height:1.72;color:var(--muted);max-width:860px;white-space:pre-line}
+.section{padding:46px 3vw;border-top:1px solid rgba(255,255,255,.04);min-height:0}
+.intro{max-width:900px;margin-bottom:18px}.intro h2{font-size:clamp(31px,4vw,47px);margin:12px 0 15px}
+.row{display:grid;grid-template-columns:minmax(280px,.8fr) minmax(430px,1.2fr);gap:38px;align-items:center;margin:16px 0 0;padding:30px;border:1px solid rgba(183,154,231,.22);border-radius:30px;background:linear-gradient(135deg,rgba(34,27,62,.70),rgba(18,22,44,.88));position:relative}
+.section .row + .row{margin-top:40px}
+.section .row + .row:before{content:"";position:absolute;left:0;right:0;top:-20px;height:1px;background:rgba(255,255,255,.04);pointer-events:none}
+.row.reverse{grid-template-columns:minmax(430px,1.2fr) minmax(280px,.8fr)}.row.reverse .copy{grid-column:2;grid-row:1}.row.reverse .media{grid-column:1;grid-row:1}
+.copy h3{font-size:30px;line-height:1.15;margin:0 0 16px}.copy p{font-size:19px;line-height:1.68;color:var(--muted);margin:0}
+.violet{color:var(--violet)}.green{color:var(--green)}.peach{color:var(--peach)}
+.media{padding:13px;border-radius:24px;background:rgba(7,9,20,.68);border:1px solid rgba(255,255,255,.09);width:100%}
+.row .media{height:298px;min-height:298px;max-height:298px;display:flex;align-items:stretch;justify-content:center;overflow:hidden}
+.row .media.media-profile{height:auto;min-height:298px;max-height:none;overflow:visible;flex-direction:column;align-items:center}
+.row .media.media-zoom-block:not(.media-profile){flex-direction:column;align-items:stretch}
+.row .media .grid{flex:1;width:100%;min-height:0;height:100%;grid-template-rows:repeat(2,minmax(0,1fr));align-content:stretch}
+.row .media.media-zoom-block .grid{height:auto;flex:1;min-height:0}
+.profile-inner{display:flex;align-items:center;justify-content:center;width:100%;flex:1;min-height:0;max-height:min(72vw,340px)}
+.profile-img{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;border-radius:18px;background:#090b17;cursor:zoom-in}
+.zoom-hint{margin:0;padding-top:8px;font-size:12px;line-height:1.45;color:#a9a5b8;text-align:center;flex-shrink:0}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;width:100%}
+.thumb{position:relative;border:0;padding:0;background:none;cursor:zoom-in;border-radius:15px;overflow:hidden;min-width:0;min-height:0;height:100%}.thumb img{display:block;width:100%;height:100%;object-fit:cover}
+.videos{grid-template-columns:repeat(3,minmax(0,1fr))}.grid.psy{grid-template-columns:repeat(3,minmax(0,1fr))}.videos .thumb video{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none;background:#090b17}.close{z-index:1001}
+.play{cursor:pointer}.play:after{content:"▶";position:absolute;inset:50% auto auto 50%;transform:translate(-50%,-50%);width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--peach),#d991bb,var(--violet));color:#171221;font-size:15px;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+.empty{display:grid;place-items:center;text-align:center;min-height:0;border:1px dashed rgba(198,169,240,.35);color:#aaa7bb;background:rgba(18,18,39,.55);font-size:13px}
+.benefits{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.benefit{min-height:195px;padding:28px;border:1px solid rgba(183,154,231,.22);border-radius:28px;background:linear-gradient(135deg,rgba(34,27,62,.72),rgba(18,22,44,.88))}.benefit h3{font-size:25px;margin:0 0 12px}.benefit p{font-size:18px;line-height:1.65;color:var(--muted);margin:0}
+.lightbox{position:fixed;inset:0;z-index:1000;display:none;align-items:center;justify-content:center;padding:30px;background:rgba(3,4,12,.92);backdrop-filter:blur(8px)}.lightbox.open{display:flex}.lightbox img,.lightbox video{display:none;max-width:min(92vw,780px);max-height:88vh;border-radius:20px;background:#000;box-shadow:0 20px 70px rgba(0,0,0,.5)}.lightbox img.show,.lightbox video.show{display:block}.close{position:fixed;top:20px;right:24px;width:48px;height:48px;border:0;border-radius:50%;font-size:28px;color:#fff;background:rgba(255,255,255,.13);cursor:pointer}
+@media(max-width:820px){
+.wrap{width:min(100% - 22px,1100px)}.hero{padding:55px 5px}.section{padding:38px 0}.top-back{margin-left:0}.bottom{padding-left:0}
+.section .row + .row{margin-top:32px}.section .row + .row:before{top:-16px}
+.row,.row.reverse{display:flex;flex-direction:column;padding:18px;gap:22px}.row.reverse .copy,.row.reverse .media{grid-column:auto;grid-row:auto}
+.row .media{height:auto;min-height:220px;max-height:none;padding:8px}
+.row .media .grid{height:auto;min-height:220px;grid-template-rows:repeat(2,minmax(0,1fr))}
+.grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}.videos{grid-template-columns:repeat(3,minmax(0,1fr))}.grid.psy{grid-template-columns:repeat(2,minmax(0,1fr))}.thumb{border-radius:9px}.play:after{width:30px;height:30px;font-size:11px}.zoom-hint{font-size:11px;padding-top:6px}
+.benefits{grid-template-columns:1fr}.copy h3{font-size:27px}
+}
+</style></head><body><main class="wrap">
+<div class="top-back"><button class="back" onclick="location.href='index.html#examples'">← Вернуться к примерам</button></div>
+<section class="hero"><div class="kicker">НЕЙРОСЕТИ ДЛЯ ОФОРМЛЕНИЯ И ПРОДВИЖЕНИЯ</div><h1><span class="grad">Как выделиться</span><br>среди других психологов?</h1>
+<p class="lead">Психологов много. И бывает непросто рассказать о себе так, чтобы вас заметили, запомнили и поняли, чем именно вы можете быть полезны.
+
+Нейросеть поможет найти свои слова, оформить соцсети и создать изображения, которые помогут вам выделиться среди других.</p></section>
+
+<section class="section">
+<div class="intro"><div class="kicker">ПЕРВОЕ ВПЕЧАТЛЕНИЕ</div><h2><span class="grad">Ярко представить себя</span> и свои услуги</h2><p>В соцсетях важно не только, что вы говорите и пишете, но и как вы себя показываете. Нейросети сделают вашу подачу более интересной, заметной и запоминающейся.</p></div>
+
+<div class="row"><div class="copy"><h3 class="violet">Оформление профиля и канала</h3><p>Нейросеть поможет продумать оформление профиля и канала так, чтобы вас заметили и запомнили: подобрать идею для фото профиля, оформить шапку, сформулировать позиционирование и понятно рассказать о себе и своих услугах.</p></div><div class="media media-profile media-zoom-block"><div class="profile-inner"><img class="profile-img" src="assets-examples01-visuals/Max scan.jpg" alt="Оформление канала" onclick="openImage(this.src)"></div><p class="zoom-hint">Нажмите на изображение, чтобы увеличить</p></div></div>
+
+<div class="row reverse"><div class="copy"><h3 class="green">О чем сегодня рассказать?</h3><p>Нейросеть может за несколько минут предложить идеи для сторис под нужную тему, задачу и настроение.</p></div><div class="media media-zoom-block"><div class="grid stories"><button class="thumb" onclick="openImage(this.querySelector('img').src)"><img src="assets-examples01-visuals/Stories 1.JPG" alt="Сторис 1"></button><button class="thumb" onclick="openImage(this.querySelector('img').src)"><img src="assets-examples01-visuals/Stories 2.JPG" alt="Сторис 2"></button><button class="thumb" onclick="openImage(this.querySelector('img').src)"><img src="assets-examples01-visuals/Stories 3.JPG" alt="Сторис 3"></button><button class="thumb" onclick="openImage(this.querySelector('img').src)"><img src="assets-examples01-visuals/Stories 4.JPG" alt="Сторис 4"></button><button class="thumb" onclick="openImage(this.querySelector('img').src)"><img src="assets-examples01-visuals/Stories 5.JPG" alt="Сторис 5"></button><button class="thumb" onclick="openImage(this.querySelector('img').src)"><img src="assets-examples01-visuals/Stories 6.jpg" alt="Сторис 6"></button><button class="thumb" onclick="openImage(this.querySelector('img').src)"><img src="assets-examples01-visuals/Stories 7.JPG" alt="Сторис 7"></button><button class="thumb" onclick="openImage(this.querySelector('img').src)"><img src="assets-examples01-visuals/Stories 8.JPG" alt="Сторис 8"></button></div><p class="zoom-hint">Нажмите на изображение, чтобы увеличить</p></div></div>
+
+<div class="row"><div class="copy"><h3 class="peach">Когда для поста нужна привлекательная картинка</h3><p>Нейросеть может за несколько минут создать изображение под вашу тему и идею - от реалистичной фотографии до иллюстрации.</p></div><div class="media media-zoom-block"><div class="grid pictures"><button class="thumb" onclick="openImage(this.querySelector('img').src)"><img src="assets-examples01-visuals/photo1.jpg" alt="Изображение 1"></button><button class="thumb" onclick="openImage(this.querySelector('img').src)"><img src="assets-examples01-visuals/photo2.jpg" alt="Изображение 2"></button><button class="thumb" onclick="openImage(this.querySelector('img').src)"><img src="assets-examples01-visuals/photo3.jpg" alt="Изображение 3"></button><button class="thumb" onclick="openImage(this.querySelector('img').src)"><img src="assets-examples01-visuals/photo4.jpg" alt="Изображение 4"></button><button class="thumb" onclick="openImage(this.querySelector('img').src)"><img src="assets-examples01-visuals/photo5.jpg" alt="Изображение 5"></button><button class="thumb" onclick="openImage(this.querySelector('img').src)"><img src="assets-examples01-visuals/photo6.jpg" alt="Изображение 6"></button><button class="thumb" onclick="openImage(this.querySelector('img').src)"><img src="assets-examples01-visuals/photo7.jpg" alt="Изображение 7"></button><button class="thumb" onclick="openImage(this.querySelector('img').src)"><img src="assets-examples01-visuals/photo8.jpg" alt="Изображение 8"></button></div><p class="zoom-hint">Нажмите на изображение, чтобы увеличить</p></div></div>
+
+<div class="row reverse"><div class="copy"><h3 class="violet">Классические иллюстрации на психологические темы</h3><p>Нейросеть может создать иллюстрацию под нужную тему - например, про тревогу, отношения, одиночество, самооценку или другие запросы, с которыми вы работаете.</p></div><div class="media media-zoom-block"><div class="grid pictures psy"><button class="thumb" type="button" onclick="openImage(this.querySelector('img').src)"><img src="assets-examples01-visuals/Psy01.png" alt=""></button><button class="thumb" type="button" onclick="openImage(this.querySelector('img').src)"><img src="assets-examples01-visuals/Psy02.png" alt=""></button><button class="thumb" type="button" onclick="openImage(this.querySelector('img').src)"><img src="assets-examples01-visuals/Psy03.png" alt=""></button><button class="thumb" type="button" onclick="openImage(this.querySelector('img').src)"><img src="assets-examples01-visuals/Psy04.png" alt=""></button><button class="thumb" type="button" onclick="openImage(this.querySelector('img').src)"><img src="assets-examples01-visuals/Psy05.png" alt=""></button><button class="thumb" type="button" onclick="openImage(this.querySelector('img').src)"><img src="assets-examples01-visuals/Psy06.png" alt=""></button></div><p class="zoom-hint">Нажмите на изображение, чтобы увеличить</p></div></div>
+
+<div class="row"><div class="copy"><h3 class="green">Как собрать видео, которое хочется досмотреть?</h3><p>Нейросеть помогает продумать идею видео, последовательность кадров, текст на экране и его длительность, чтобы зрители успевали все прочитать. А еще может подсказать, какая музыка подойдет под настроение ролика.</p></div><div class="media"><div class="grid videos"><button class="thumb play" type="button" onclick="openVideo('assets-examples01-visuals/Video1.MP4')"><video preload="metadata" muted playsinline src="assets-examples01-visuals/Video1.MP4"></video></button><button class="thumb play" type="button" onclick="openVideo('assets-examples01-visuals/Video2.MP4')"><video preload="metadata" muted playsinline src="assets-examples01-visuals/Video2.MP4"></video></button><button class="thumb play" type="button" onclick="openVideo('assets-examples01-visuals/Video3.MP4')"><video preload="metadata" muted playsinline src="assets-examples01-visuals/Video3.MP4"></video></button><button class="thumb play" type="button" onclick="openVideo('assets-examples01-visuals/Video4.MP4')"><video preload="metadata" muted playsinline src="assets-examples01-visuals/Video4.MP4"></video></button><button class="thumb play" type="button" onclick="openVideo('assets-examples01-visuals/Video5.MP4')"><video preload="metadata" muted playsinline src="assets-examples01-visuals/Video5.MP4"></video></button><button class="thumb play" type="button" onclick="openVideo('assets-examples01-visuals/Video6.MP4')"><video preload="metadata" muted playsinline src="assets-examples01-visuals/Video6.MP4"></video></button></div></div></div>
+</section>
+
+<section class="section"><div class="intro"><div class="kicker">ЧТО ЭТО ДАЕТ</div><h2>Оформление, которое <span class="grad">работает на вас</span></h2></div><div class="benefits">
+<div class="benefit"><h3>Экономия времени и денег</h3><p>Не нужно часами искать подходящие изображения или для каждой задачи обращаться к отдельному специалисту.</p></div>
+<div class="benefit"><h3 class="violet">Свой узнаваемый стиль</h3><p>Фото, оформление и изображения можно создавать в единой стилистике.</p></div>
+<div class="benefit"><h3 class="green">Яркое первое впечатление</h3><p>Фото профиля, оформление и подача помогают сразу обратить на себя внимание.</p></div>
+<div class="benefit"><h3 class="peach">Возможность выделиться</h3><p>Можно представить себя и свои услуги так, чтобы отличаться от конкурентов.</p></div>
+</div></section>
+<div class="bottom"><button class="back" onclick="location.href='index.html#examples'">← Вернуться к примерам</button></div></main>
+
+<div id="lb" class="lightbox" onclick="backdropClose(event)"><button class="close" onclick="closeLB()">×</button><img id="lbimg" alt=""><video id="lbvideo" controls playsinline preload="metadata"></video></div>
+<script>
+const lb=document.getElementById('lb'), img=document.getElementById('lbimg'), vid=document.getElementById('lbvideo');
+function openImage(src){vid.pause();vid.classList.remove('show');img.src=src;img.classList.add('show');lb.classList.add('open');document.body.style.overflow='hidden'}
+function openVideo(src){vid.pause();vid.removeAttribute('src');vid.load();img.classList.remove('show');vid.src=src;vid.classList.add('show');lb.classList.add('open');document.body.style.overflow='hidden'}
+function closeLB(){vid.pause();vid.removeAttribute('src');vid.load();img.classList.remove('show');vid.classList.remove('show');lb.classList.remove('open');document.body.style.overflow=''}
+function backdropClose(e){if(e.target===lb)closeLB()}document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLB()})
+</script></body></html>
